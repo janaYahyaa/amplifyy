@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500&display=swap');
+
+@font-face {
+   font-family: serif;
+   src: url(BodoniFLF-Bold.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+html, body{
+  height: 100%;
+}
+
+.header{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(52,52,52,0.5), #15223B), url('https://cdn.pixabay.com/photo/2017/04/08/11/07/nerve-cells-2213009_1280.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+
+.navbar{
+ width: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 6%;
+  transition: background 1s;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 27px;
+  font-weight: 600;
+  color: #CCCCCE;
+  font-family: serif;
+}
+
+.imagelogo{
+  width: 40px;
+  margin-right: 10px;
+}
+
+.pages ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+
+}
+
+.pages a:hover{
+  color: #71707D;
+}
+
+.pages a {
+  color: #CCCCCE;
+  font-size: 22px;
+  font-family: 'Cormorant Infant', serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(14, 23, 39, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  font-family: 'Cormorant Infant', serif;
+  color: #CCCCCE;
+  display: block;
+ transition: 0.3s;
+}
+
+
+.overlay a:hover, .overlay a:focus {
+  color: #71707D;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.openbtn div{
+height: 4px;
+background-color: #FAF8FF;
+margin: 5px 0;
+border-radius: 25px;
+transition: 0.3s;
+}
+
+.openbtn{
+  width: 30px;
+  display: block;
+  margin: 1em 0 0 1em;
+}
+
+.one{
+  width: 30px;
+}
+
+.two{
+  width: 20px
+}
+
+.three{
+width: 25px;
+}
+
+.openbtn:hover div{
+  width: 30px;
+  color:#71707D;
+}
+
+.navbar:hover {
+  background-color: #0E1727;
+}
+
+.title{
+color: #CCCCCE;
+text-align: center;
+margin-top: 9%;
+}
+
+.title h1{
+  font-size: 80px;
+  line-height: 120px;
+  font-weight: 400;
+  font-family: serif;
+}
+
+.title p{
+font-family: 'Cormorant Infant', serif;
+font-size: 20px;
+line-height: 28px;
+margin-top: 25px;
+}
+
+.links{
+margin-top: 35px;
+text-align: center;
+font-family: 'Cormorant Infant', serif;
+font-size: 20px;
+}
+
+.btn{
+  color: #CCCCCE;
+  border: 0.5px solid #CCCCCE;
+  border-radius: 30px;
+  padding: 5px 15px;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.btn:hover{
+  color: #15223B;
+  background-color: #CCCCCE;
+}
+
+.mission{
+  background-color: #CCCCCE;
+  display: inline-block;
+  text-align: center;
+}
+
+.mission h1{
+  line-height: 120px;
+  font-weight: 400;
+  font-family: serif;
+  margin: 30px;
+  font-size: 70px;
+  color: #0E1727;
+}
+
+.mission p{
+font-family: 'Cormorant Infant', serif;
+color: #CCCCCE;
+font-size: 22px;
+margin: 37px 10%;
+border: 1px solid #0E1727;
+background-color: rgba(14, 23, 39);
+border-radius: 30px;
+padding: 30px;
+}
+
+.news{
+  background-color: #0E1727;
+  margin: auto;
+}
+
+.news h1{
+  line-height: 120px;
+  font-weight: 400;
+  font-family: serif;
+  font-size: 70px;
+  color: #CCCCCE;
+  text-align: center;
+}
+
+.news .allcards{
+  margin: auto;
+  background-color: #0E1727;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container{
+  margin: 20px;
+  display: inline-block;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 0 #71707D;
+  transition: all 0.3s;
+  background: #EAE9EC;
+
+}
+
+.container:hover{
+  transform: translate(-6px);
+  box-shadow: 0 11px 14px #71707D, 0 8px 20px #71707D;
+}
+
+.card-image{
+  display: block;
+  width: 100%;
+  height:200px;
+  overflow: hidden;
+}
+
+.card-image img{
+  width: 100%;
+}
+
+.card-body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 350px;
+  padding: 10px 20px;
+}
+
+.card-body .card-title{
+  padding: 0;
+  margin: 3px;
+  font-size: 24px;
+  color: #0E1727;
+  font-family: serif;
+  text-align: center;
+}
+
+.card-body .card-text{
+  font-size: 16px;
+  margin-bottom: 17px;
+  color: #0E1727;
+}
+
+.card-btn{
+  display: flex;
+  align-items: center;
+  /* width: 100%; */
+  text-align:center;
+  height: 70px;
+  margin: auto;
+}
+
+.footer{
+  background: #CCCCCE;
+  text-align: center;
+  margin: auto;
+}
+
+.footer h3{
+  color:# 0E1727;
+  font-family: serif;
+  font-size: 18px
+}
+
+.footerimgs{
+  margin: 15px 50px;
+  display: inline-block;
+}
